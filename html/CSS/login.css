@@ -17,14 +17,14 @@ body{
     position: relative;
     width: 380px;
     height: 420px;
-    background: linear-gradient(180deg, #A300FF 0%, #FF8652 100%);
+   background: #222;
     border-radius: 8px;
 }
 .box form
 {
     position: absolute;
     inset: 4px;
-    background: #222;
+    background: linear-gradient(180deg, #A300FF 0%, #FF8652 100%);
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
