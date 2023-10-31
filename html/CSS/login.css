@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 *
 {
     margin: 0;
@@ -156,17 +157,7 @@ color: #fff;
 font-size: 0.75em;
 transform: translateY(-34px)
 }
-#toggle{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 20px;
-  background: url(../IMG/olho.png);
-  background-size: cover;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
+
 .box form .inputBox i
 {
   position: absolute;
