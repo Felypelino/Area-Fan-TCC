@@ -5,35 +5,46 @@
     <link rel="stylesheet" href="CSS/cadas.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
 
-    <div class="container">
-        <div class="image">
-            <div class="form-box">
-               <h2>Cadastro</h2>
-               <div class="input-box">
-                <input type="text">
-                <label for="">Nome de Usuário</label>
-               </div>
-               <div class="input-box">
-                <input type="text">
-                <label for="">Escreva seu Email</label>
-               </div>
-               <div class="input-box">
-                <input type="text">
-                <label for="">Crie sua Senha</label>
-               </div>
-               <div class="input-box">
-                <input type="text">
-                <label for="">Coloque seu endereço</label>
-               </div>
-               <div class="input-box">
-                <input type="text">
-                <label for="">Escreva seu CPF</label>
-               </div>
-            </div>
-        </div>
-    </div>
+    <style>
+        body{
+            background-image:url('../html/IMG/manga-anime.jpg') ;
+            background-repeat:no-repeat ;
+            background-attachment:fixed ;
+            background-size:100% 100%;
+        }
+    </style>
+    <body>
+        <div class="box">
+            <span class="borderLine"></span>
+            <form>
+                <h2>Login</h2>
+                <div class="inputBox"><input type="email" required="required">
+                <span>Email</span>
+                <i></i>
+                </div>
+                <div class="inputBox"><input type="password" id="password" required="required">
+                    <span>Senha</span>
+                    <i></i>
+                    <div class="inputBox"><input type="password" id="password" required="required">
+                        <span>Senha</span>
+                        <i></i>
+                        <div class="inputBox"><input type="password" id="password" required="required">
+                            <span>Senha</span>
+                            <i></i>
+                            <div class="inputBox"><input type="password" id="password" required="required">
+                                <span>Senha</span>
+                                <i></i>    
+                </div>
+                <div class="links">
+                   <a href="#">Esqueci a Senha</a>
+                   <a href="#">Cadastrar</a>
+                </div>
+                <input type="submit" value="Login">
     
+    
+            </form>
+        </div>
 </body>
 </html>

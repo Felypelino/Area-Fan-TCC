@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Menu{background: linear-gradient(180deg, #A300FF 0%, #FF8652 100%);
+border: 0px;
+border-radius: 0%;
+position: relative;
+height: 150px;
+border-spacing: 0px;
+}
+.Logo{ margin-top: -15px;
+    position: absolute;
+left: 20px;}
