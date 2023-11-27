@@ -74,3 +74,19 @@
 .Logo{ margin-top: -15px;
     position: absolute;
 left: 20px;}
+.foto {
+    top: 20px;
+    position: absolute;
+right: 100px;
+  }
+
+  .crunch {
+    top: 50px;
+    position: absolute;
+right: 220px;
+  }
+  .nome {
+    top: 105px;
+    position: absolute;
+right: 127px;
+  }
