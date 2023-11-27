@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../html/CSS/teste.css">
-    <title>Document</title>
+    <title>Area Fan</title>
+    <link rel="shortcut icon" type="imagex/png" href="../html/IMG/Logo.png">
 </head>
 <body>
     <style>
@@ -22,10 +23,11 @@
             align-items: center;
             list-style-type: none;
             margin: 4;
+        
         }
 
         .navbar ul li {
-            margin: 0 130px;
+            margin: 0 60px;
             font-size: 20px;
         }
 
@@ -44,34 +46,46 @@
             padding: 0px 30px;
             height: 40px;
             border-radius: 40px;
-            transform: translate(-50%, -50%);
+            transform: translate(-55%, -50%);
         }
-        @media screen and (max-width: 768px) {
-            .navbar {
-                height: auto;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .search-bar {
-                margin-top: 20px;
-            }
+   
+        .color-button {
+      background: #fff;
+      border: none;
+      height: 20px;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+        .navbar {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
         }
 
+        .search-bar {
+            margin-top: 20px;
+        }
+    }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#">Action figure</a></li>
-            <li><a href="#">Roupas</a></li>
-            <li><a href="#">Crie sua Conta</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-        <input type="text" class="search-bar" placeholder="Search" id="search" >
-       
+</style>
+
+<nav class="navbar" id="navbar">
     
-    </div>
+    <img src="../html/IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"> 
+    <ul>
+        <li><a href="#">Action figure</a></li>
+        <li><a href="#">Roupas</a></li>
+        <li><a href="#">Crie sua Conta</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+    <input type="text" class="search-bar" placeholder="Search" id="search" >
+</nav>
+
+<div>
 <img class="propaganda1" src="../html/IMG/cyberpunk-2077-xbox-one-x-special-edition-comes-with-free-dl_mv74.jpg" width="1200px;" height="550px" style="border-radius: 40px;">
 <h1 style="font-size: 60px; margin-top: 40px; margin-bottom: 40px; margin-left: 37% ;">Populares hoje!</h1>
 <div class="populares hoje">
