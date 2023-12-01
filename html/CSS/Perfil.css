@@ -91,7 +91,61 @@ right: 220px;
 right: 127px;
   }
   .foto1 {
-    top: 200px;
+    top: 160px;
     position: absolute;
-right: 850px;
+right: 785px;
   }
+  .lapis{
+    top: 445px;
+    position: absolute;
+right: 1100px;
+  }
+  .lapis1{
+    top: 528px;
+    position: absolute;
+right: 1100px;
+  }
+  .camera{
+    top: 370px;
+    position: absolute;
+right: 980px;
+  }
+  .corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 82vh;
+    flex-direction: column;
+  }
+  .input-group{
+    position: relative;
+    margin: 10px 0;
+  }
+  .input-group label{
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    transform: translateY(-60%);
+    font-size: 25px;
+    color: #A300FF;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .input-group input{
+    width: 340px;
+    height: 60px;
+    font-size: 25px;
+    color: #A300FF;
+    background: transparent;
+    border: 1.2px solid #A300FF;
+    outline:none;
+    border-radius: 10px;
+  }
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: 0;
+    font-size: 18px;
+    background: #fff;
+
+}
