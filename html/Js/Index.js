@@ -1,11 +1,14 @@
-function changecolor(){
-const buttons = document.querySelectorAll('.color-button');
-const navbar = document.querySelector('.navbar');
+let count = 1;
+document.getElementById("radio1").checked = true;
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const gradientClass = button.classList[1];
-    navbar.className = 'navbar';
-    navbar.classList.add(gradientClass);
-  });
-});}
+setInterval( function(){
+    nextImage();
+}, 5000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count).checked = true;
+}
