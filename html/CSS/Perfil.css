@@ -19,15 +19,15 @@
 
 }
 
-.rodape{background: linear-gradient(180deg, #FF8652 0%,#A300FF 100%);
+.rodape{
+  background: linear-gradient(180deg, #FF8652 0%,#A300FF 100%);
     color: white;
     height: auto;
     width: 100%;
     font-size: 14px;
     font-family: helvetica;
     position: absolute;
-    bottom: 0px;
-    margin: 0px;
+    bottom: -40%;
     padding: 0px;
 }
 .rodape a{
@@ -148,4 +148,127 @@ right: 980px;
     font-size: 18px;
     background: #fff;
 
+}
+
+
+.container {
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.texto{
+    position: absolute;
+    top: 605px;
+    left: 870px;
+    color: #A300FF;
+}
+.texto1{
+    position: absolute;
+    top: 650px;
+    left: 730px;
+    color: #A300FF;
+    width: 350px;
+    height: 300px;
+}
+.texto2{
+  position: absolute;
+  top: 740px;
+  left: 730px;
+  color: #A300FF;
+  width: 350px;
+  height: 300px;
+}
+
+.corpo1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  flex-direction: column;
+}
+.input-grop{
+  position: relative;
+  margin: 10px 0;
+  top: -120px;
+}
+.input-grop label{
+  position: absolute;
+  top: 60%;
+  left: 5px;
+  transform: translateY(-60%);
+  font-size: 25px;
+  color: #A300FF;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+.input-grop input{
+  width: 340px;
+  height: 60px;
+  font-size: 25px;
+  color: #A300FF;
+  background: transparent;
+  border: 1.2px solid #A300FF;
+  outline:none;
+  border-radius: 10px;
+}
+.input-grop input:focus~label,
+.input-grop input:valid~label{
+  top: 0;
+  font-size: 18px;
+  background: #fff;
+
+}
+
+select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  outline:0;
+  box-shadow:none;
+  border:0!important;
+  background: #5c1f99;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color:#fff;
+  cursor:pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 3em;
+  line-height: 3;
+  background: #fff;
+  overflow: hidden;
+  border-radius: .25em;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: rgb(48, 3, 61);
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.select:hover::after {
+  color: #A300FF;
+}
+
+.barinha{
+  position: relative;
+left: 730px;
+top: -115px;
+  
 }

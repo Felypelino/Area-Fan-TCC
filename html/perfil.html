@@ -105,10 +105,145 @@
     </div>
     </div>
 
-    <div class="botão">
-        <input type="checkbox">
+    
+
+    <style>
+        /* Estilos para o botão de alternância */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            top: -255px;
+            left: 725px;
+        }
+
+        /* Estilos para o botão de alternância - o fundo */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* Estilos para o botão de alternância - a alavanca */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        /* Estilos para o botão de alternância - a alavanca quando está ativa */
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        /* Estilos para o botão de alternância quando está ativa */
+        input:checked + .slider {
+            background-color: #A300FF;
+        }
+
+        /* Estilos para o botão de alternância - a alavanca quando está ativa */
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Estilos para a animação do botão de alternância */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        /* Estilos para a alavanca redonda */
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+</body>
+
+
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>
+
+<div><h2 class="texto">PIN</h2>
+
+<p class="texto1">Ative seu pin na sua conta para utilizar em suas compras ou 
+    em alterações de senha para maior segurança</p>
 </div>
 
+<div><h2 class="texto2">Mudança de Senha</h2></div>
+
+<div class="corpo1">
+    <div class="input-grop">
+        <input type="text" required>
+        <label for="">Mude a sua Senha</label>
+    </div>
+    <div class="input-grop">
+        <input type="text" required>
+        <label for="">Comfirme sua senha</label>
+    </div>
+    </div>
+
+</head>
+<body>
+
+    <div class="barinha"><div class="select">
+        <select name="format" id="format">
+           <option selected disabled>Gênero</option>
+           <option value="Masculino">Masculino</option>
+           <option value="Feminino">Feminino</option>
+           <option value="Outros">Outros</option>
+        </select>
+     </div>
+    </div>
+
+<footer>
+    <div class="rodape">
+        <font color="#fff">
+            <div class="box"><div class="rectangle"></div></div>
+         <ul>
+        <li><u><h1>Institucional</h1></u>
+       <p>Sobre a empresa</p>
+        <p>Parceiros</p>
+    <p>politicas</p>
+<br>
+       <li> <u><h1>Atendimento</h1></u>
+        <p>Area_fan@gmail.com</p>
+        <p>11 98089-1509</p>
+        <p>11 4345-2594</p>
+        <p>Reclamações</p></li>
+        <li><u><h1>Redes</h1></u>
+        <p>@Area_Fan</p>
+    <p>AreaFan.discord.gg</p>
+       <p>AreaFan</p>
+    <p>AreaFan</p></li>
+    <li><u><h1>Cliente</h1></u>
+    <p>Minha conta</p>
+    <p>Meus Pedidos</p>
+   <p>Duvidas</p>
+<br></li>
+    </ul> 
+    </fieldset>
+    </font>
+    </div>
+</footer>
 
 </body>
 </html>
