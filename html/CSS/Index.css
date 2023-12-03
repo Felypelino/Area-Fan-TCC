@@ -73,11 +73,29 @@ right: 127px;
     top: 50px;
     position: absolute;
 right: 220px;
+transition: 1s;
   }
+ 
+  .crunch:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    transition: 0.5s;
+
+
+
+ } 
   .foto {
     top: 20px;
     position: absolute;
 right: 100px;
+transition: 1s;
+  }
+  .foto:hover{
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    transition: 0.5s;
   }
 
 .slider{
