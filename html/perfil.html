@@ -29,7 +29,7 @@
         }
 
         .navbar ul li {
-            margin: 0 140px;
+            margin: 0 150px;
             font-size: 20px;
         }
 
@@ -59,7 +59,7 @@
       padding: 5px 10px;
       cursor: pointer;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 784px) {
         .navbar {
             height: auto;
             flex-direction: column;
@@ -71,27 +71,41 @@
         }
     }
     </style>
-<body>
 </style>
 
 <nav class="navbar" id="navbar">
     
-    <a href="../html/index.html"><img src="../html/IMG/Artegra Sans.png" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
-    <img src="../html/IMG/foto.png" alt="" width="90px" class="foto" height="90px">
-    <a href="https://www.crunchyroll.com/pt-br"> <img src="../html/IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
-    <div class="nome">Mark</div>
+    <a href="../html/index.html"><img src="../html/IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
+    <div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff;" class="foto"></div>
+
+   <a href="https://www.crunchyroll.com/pt-br"> <img src="../html/IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
+   <p id="profile-username" class="nome"></p>
     <ul>
-        <li><a href="#">Action figure</a></li>
+        <li><a href="#">Skins</a></li>
         <li><a href="#">Roupas</a></li>
-        <li><a href="#">Crie sua Conta</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#">Mudar de conta</a></li>
+        <li><a href="../html/login.html">Configurações</a></li>
     </ul>
     <input type="text" class="search-bar" placeholder="Search" id="search" >
 </nav>
 
+<fieldset class="ajuste">
+<ul>
 
+<li>
+    <div>
+        <div class="largura2">
+            <div class="imageContainer">
+            <img src="../html/IMG/foto.png" alt="Selecione uma imagem" id="imgPhoto">
+            </div>
+        </div>
+    
+        
+    <input type="file" id="flImage" name="fImage" accept="image/*" onclick="loadAndDisplayImageFromLocalStorage()">
+    </div>
+</li>
 
-<div class="corpo">
+<li><div class="corpo">
     <div class="input-group">
         <input type="text" required>
         <label for="">Nome de Usuário</label>
@@ -101,7 +115,7 @@
         <label for="">Mude seu Endereço</label>
     </div>
     </div>
-
+</li>
     
 
     <style>
@@ -170,10 +184,7 @@
             border-radius: 50%;
         }
     </style>
-</head>
-</body>
-
-
+<li>
 <label class="switch">
     <input type="checkbox">
     <span class="slider round"></span>
@@ -184,7 +195,8 @@
 <p class="texto1">Ative seu pin na sua conta para utilizar em suas compras ou 
     em alterações de senha para maior segurança</p>
 </div>
-
+</li>
+<li>
 <div><h2 class="texto2">Mudança de Senha</h2></div>
 
 <div class="corpo1">
@@ -198,8 +210,7 @@
     </div>
     </div>
 
-</head>
-<body>
+
 
     <div class="barinha"><div class="select">
         <select name="format" id="format">
@@ -209,20 +220,13 @@
            <option value="Outros">Outros</option>
         </select>
      </div>
-    </div>
-<div>
-    <div class="max-width">
-        <div class="imageContainer">
-        <img src="../html/IMG/foto.png" alt="Selecione uma imagem" id="imgPhoto">
-        </div>
-    </div>
+    </div></li>
 
-    
-<input type="file" id="flImage" name="fImage" accept="image/*">
+</fieldset>
+<fieldset class="configurar">
 
-<script src="../html/Js/script.js"></script>
-</div>
-    
+</ul>
+</fieldset>
 <footer>
     <div class="rodape">
         <font color="#fff">
@@ -253,6 +257,20 @@
     </font>
     </div>
 </footer>
+<script src="../html/Js/perfil.js"></script>
+<script>
+    let cachedImageDiv = document.getElementById('divCachedImage');
 
+    function loadAndDisplayImageFromLocalStorage() {
+        const cachedImage = localStorage.getItem('cachedImage');
+        if (cachedImage) {
+            cachedImageDiv.style.backgroundImage = `url(${cachedImage})`;
+            // Pode ser necessário ajustar estilos adicionais, como largura e altura
+        }
+    }
+
+    // Chamar a função para carregar e exibir a imagem ao iniciar a página
+    loadAndDisplayImageFromLocalStorage();
+</script>
 </body>
 </html>

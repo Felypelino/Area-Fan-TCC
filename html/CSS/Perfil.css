@@ -5,8 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
+.body{ height: 100px;
+
+}
 .rodape ul {
     display: flex;
     justify-content: center;
@@ -27,7 +31,9 @@
     font-size: 14px;
     font-family: helvetica;
     position: absolute;
-    bottom: -40%;
+    bottom: -60%;
+    left: 0%;
+    right: 0%;
     padding: 0px;
 }
 .rodape a{
@@ -76,39 +82,43 @@
 left: 20px;}
 .foto {
     top: 20px;
+    border-radius: 100%;
+    background-size: 100% 100%;
     position: absolute;
 right: 100px;
   }
 
+  .nome {
+    top: 120px;
+    position: absolute;
+right: 85px;
+color: white;
+font-size: 20px;
+  }
   .crunch {
-    top: 50px;
+    top: 40px;
     position: absolute;
 right: 220px;
-  }
-  .nome {
-    top: 105px;
-    position: absolute;
-right: 127px;
+transition: 1s;
   }
   .foto1 {
-    top: 160px;
+    top: 200px;
     position: absolute;
-right: 785px;
+
   }
   .lapis{
     top: 445px;
     position: absolute;
-right: 1100px;
+
   }
   .lapis1{
     top: 528px;
     position: absolute;
-right: 1100px;
+
   }
   .camera{
     top: 370px;
     position: absolute;
-right: 980px;
   }
   .corpo{
     display: flex;
@@ -159,22 +169,17 @@ right: 980px;
   }
 .texto{
     position: absolute;
-    top: 605px;
-    left: 870px;
+
     color: #A300FF;
 }
 .texto1{
     position: absolute;
-    top: 650px;
-    left: 730px;
     color: #A300FF;
     width: 350px;
     height: 300px;
 }
 .texto2{
   position: absolute;
-  top: 740px;
-  left: 730px;
   color: #A300FF;
   width: 350px;
   height: 300px;
@@ -190,7 +195,6 @@ right: 980px;
 .input-grop{
   position: relative;
   margin: 10px 0;
-  top: -120px;
 }
 .input-grop label{
   position: absolute;
@@ -268,9 +272,34 @@ select::-ms-expand {
 
 .barinha{
   position: relative;
-left: 730px;
-top: -115px;
+top: 5px;
   
+}
+.ajuste{
+background-color: rgb(255, 255, 255);
+align-items: center;
+justify-content: center;
+width: 79.65%;
+margin-left: 400px;
+height: 1165px;
+border: 1px solid;
+border-color: gray;
+
+
+}
+.ajuste ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0; }
+
+.ajuste ul li {
+margin-top: 450px;
+margin-left: 0;
+margin-right: 0;
+position: relative;
+
 }
 
 /*https://www.flaticon.com/free-icon/camera_685655?term=photo&page=1&position=1&related_item_id=685655*/
@@ -279,7 +308,7 @@ input[type='file'] {
   display: none;
 }
 
-.max-width {
+.largura2 {
   max-width: 500px;
   width: 100%;
 }
@@ -292,13 +321,18 @@ input[type='file'] {
   border: 5px solid #ccc;
   border-radius: 50%;
   cursor: pointer;
-  transition: background .3s;
+  transition: .3s;
   position: relative;
-  top: -990px;
-  left: 770px;
 }
 
 #imgPhoto:hover{
   background-color: rgb(180, 180, 180);
   border: 5px solid #111;
 }
+.configurar{width: 400px;
+height: 1166px;
+background-color: #F8F8F8;
+position: absolute;
+border: 0;
+top: 151px;
+color: gray;}

@@ -4,40 +4,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/cadas.css">
     <title>Area Fan - Cadastro</title>
-    <link rel="shortcut icon" type="imagex/png" href="../html/IMG/Logo.png">
+    <link rel="shortcut icon" type="imagex/png" href="IMG/Logo.png">
 </head>
 <body>
 <div class="container">
 <div class="image">
-<div class="form-box" >
+<div class="form-box">
+    <div class="form">
 <h2>Registro</h2>
 <div class="input-box">
-    <input type="text">
-    <label for="">Nickname</label>
+    <input type="text" id="username" required>
+    <label for="username">Username</label>
 </div>
 
 <div class="input-box">
-    <input type="text">
-    <label for="">Email</label>
+    <input type="text" id="email" required>
+    <label for="email">Email</label>
+    <p id="result"></p>
+    <span id="error-message"></span>
 </div>
 
 <div class="input-box">
-<input type="text">
-<label for="">Senhas</label>
+<input type="password" id="senha" required>
+<label for="senha">Senha</label>
+<span id="error-Result"></span>
+</div>
+<div class="group">
+    <a href="/html/login.html">já tem uma conta? faça login!</a>
+</div>
+<button onclick="login(), senha(), validateEmail()">Submit</button>
+</div>
 
+
+</div>
+</div>
 </div>
 
 
 
-</div>
-</div>
-</div>
+
+<div class="imagem">
+    <img src="IMG/Artegra Sans.png" width="400px" height="400px" alt="">
+   </div>
 
 
-
-
-
-
-  <script src="../html/Js/Cadastro.js"></script>  
+  <script src="Js/Cadastro.js"></script>  
 </body>
 </html>

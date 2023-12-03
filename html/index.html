@@ -31,7 +31,7 @@
         }
 
         .navbar ul li {
-            margin: 0 140px;
+            margin: 0 150px;
             font-size: 20px;
         }
 
@@ -78,15 +78,15 @@
 
 <nav class="navbar" id="navbar">
     
-    <img src="../html/IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;">
-    <a href="../html/perfil.html"><img src="../html/IMG/foto.png" alt="" width="90px" class="foto" height="90px"></a>
+    <a href="../html/index.html"><img src="../html/IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
+    <a href="../html/perfil.html"><div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff;" class="foto"></div></a>
    <a href="https://www.crunchyroll.com/pt-br"> <img src="../html/IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
-    <div class="nome">Mark</div>
+   <p id="profile-username" class="nome"></p>
     <ul>
-        <li><a href="#">Action figure</a></li>
+        <li><a href="#">Skins</a></li>
         <li><a href="#">Roupas</a></li>
-        <li><a href="#">Crie sua Conta</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#">Mudar de conta</a></li>
+        <li><a href="../html/login.html">Configurações</a></li>
     </ul>
     <input type="text" class="search-bar" placeholder="Search" id="search" >
 </nav>
@@ -362,5 +362,19 @@
         </div>
     </footer>
     <script src="../html/Js/Index.js"></script>
+    <script>
+        let cachedImageDiv = document.getElementById('divCachedImage');
+    
+        function loadAndDisplayImageFromLocalStorage() {
+            const cachedImage = localStorage.getItem('cachedImage');
+            if (cachedImage) {
+                cachedImageDiv.style.backgroundImage = `url(${cachedImage})`;
+                // Pode ser necessário ajustar estilos adicionais, como largura e altura
+            }
+        }
+    
+        // Chamar a função para carregar e exibir a imagem ao iniciar a página
+        loadAndDisplayImageFromLocalStorage();
+    </script>
 </body>
 </html>
