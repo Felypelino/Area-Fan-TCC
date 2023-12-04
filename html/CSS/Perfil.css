@@ -31,7 +31,7 @@
     font-size: 14px;
     font-family: helvetica;
     position: absolute;
-    bottom: -60%;
+    bottom: -86.3%;
     left: 0%;
     right: 0%;
     padding: 0px;
@@ -104,21 +104,22 @@ transition: 1s;
   .foto1 {
     top: 200px;
     position: absolute;
-
+right: 785px;
   }
   .lapis{
     top: 445px;
     position: absolute;
-
+right: 1100px;
   }
   .lapis1{
     top: 528px;
     position: absolute;
-
+right: 1100px;
   }
   .camera{
     top: 370px;
     position: absolute;
+right: 980px;
   }
   .corpo{
     display: flex;
@@ -126,9 +127,12 @@ transition: 1s;
     align-items: center;
     min-height: 82vh;
     flex-direction: column;
+    position: absolute;
   }
   .input-group{
     position: relative;
+    top: -150px;
+    left: 125px;
     margin: 10px 0;
   }
   .input-group label{
@@ -143,8 +147,8 @@ transition: 1s;
     transition: .5s;
   }
   .input-group input{
-    width: 340px;
-    height: 60px;
+    width: 630px;
+    height: 80px;
     font-size: 25px;
     color: #A300FF;
     background: transparent;
@@ -169,17 +173,23 @@ transition: 1s;
   }
 .texto{
     position: absolute;
-
+top: 1070px;
+left: 1170px;
     color: #A300FF;
 }
 .texto1{
     position: absolute;
+    top: 1110px;
+font-size: 30px;
     color: #A300FF;
-    width: 350px;
+    left: 45%;
+    width: 680px;
     height: 300px;
 }
 .texto2{
   position: absolute;
+  top: 1250px;
+  left: 1070px;
   color: #A300FF;
   width: 350px;
   height: 300px;
@@ -195,10 +205,12 @@ transition: 1s;
 .input-grop{
   position: relative;
   margin: 10px 0;
+  top: 200px;
+  left: -80px;
 }
 .input-grop label{
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 5px;
   transform: translateY(-60%);
   font-size: 25px;
@@ -208,8 +220,8 @@ transition: 1s;
   transition: .5s;
 }
 .input-grop input{
-  width: 340px;
-  height: 60px;
+  width: 640px;
+  height: 80px;
   font-size: 25px;
   color: #A300FF;
   background: transparent;
@@ -271,8 +283,9 @@ select::-ms-expand {
 }
 
 .barinha{
-  position: relative;
-top: 5px;
+  position: absolute;
+  left: 1360px;
+  top: 800px;
   
 }
 .ajuste{
@@ -281,8 +294,8 @@ align-items: center;
 justify-content: center;
 width: 79.65%;
 margin-left: 400px;
-height: 1165px;
-border: 1px solid;
+height: 1447px;
+border: 0px;
 border-color: gray;
 
 
@@ -293,14 +306,6 @@ border-color: gray;
   align-items: center;
   list-style-type: none;
   margin: 0; }
-
-.ajuste ul li {
-margin-top: 450px;
-margin-left: 0;
-margin-right: 0;
-position: relative;
-
-}
 
 /*https://www.flaticon.com/free-icon/camera_685655?term=photo&page=1&position=1&related_item_id=685655*/
 
@@ -314,25 +319,59 @@ input[type='file'] {
 }
 
 #imgPhoto {
-  margin-top: 10%;
-  width: 250px;
-  height: 250px;
+  margin-top: -25%;
+  margin-left: 140px;
+  width: 600px;
+  height: 600px;
   background-color: #eee;
   border: 5px solid #ccc;
   border-radius: 50%;
   cursor: pointer;
   transition: .3s;
-  position: relative;
+  position: absolute;
 }
 
 #imgPhoto:hover{
   background-color: rgb(180, 180, 180);
   border: 5px solid #111;
 }
-.configurar{width: 400px;
-height: 1166px;
+.configurar{width: 430px;
+height: 1443px;
 background-color: #F8F8F8;
 position: absolute;
 border: 0;
 top: 151px;
-color: gray;}
+color: #F8F8F8;}
+
+ #ARRANJADO{
+  align-items: center;
+  justify-content: center;  
+  height: 300px;
+  text-align: center;
+  border: 0px;
+  font-size: 100px;
+  width: 430px;
+  transition: 1s;
+  background-color: #F8F8F8;
+ }
+.perfil-btn{
+  margin-top: 90px;
+}
+#perfil-text{
+ margin-top: 60px;
+ color: gray;
+}
+
+#perfil-text:hover{
+  color: rgb(104, 104, 104);
+}
+  
+#ARRANJADO:hover{
+    background-color: #dfdfdf;
+    zoom: 1;
+    transition: 0.5s;
+}
+#ARRANJADO a{
+  text-decoration: none;
+  color: white;
+}

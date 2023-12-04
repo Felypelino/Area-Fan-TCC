@@ -76,7 +76,7 @@
 <nav class="navbar" id="navbar">
     
     <a href="../html/index.html"><img src="../html/IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
-    <div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff;" class="foto"></div>
+    <div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff; background-image: url(../html/IMG/foto.png);" class="foto"></div>
 
    <a href="https://www.crunchyroll.com/pt-br"> <img src="../html/IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
    <p id="profile-username" class="nome"></p>
@@ -88,8 +88,8 @@
     </ul>
     <input type="text" class="search-bar" placeholder="Search" id="search" >
 </nav>
-
 <fieldset class="ajuste">
+    <h1 style="margin-left:  750px; margin-top: 30px; position: absolute; color: #A300FF;">Sua foto</h1>
 <ul>
 
 <li>
@@ -105,13 +105,13 @@
     </div>
 </li>
 
-<li><div class="corpo">
+<li class="caixa2"><div class="corpo">
     <div class="input-group">
-        <input type="text" required>
-        <label for="">Nome de Usuário</label>
+        <input id="caixa" type="text" required>
+        <label for="caixa">Nome de Usuário</label>
     </div>
     <div class="input-group">
-        <input type="text" required>
+        <input id="caixa1"  type="text" required>
         <label for="">Mude seu Endereço</label>
     </div>
     </div>
@@ -121,12 +121,12 @@
     <style>
         /* Estilos para o botão de alternância */
         .switch {
-            position: relative;
+            position: absolute;
             display: inline-block;
             width: 60px;
             height: 34px;
-            top: -255px;
-            left: 725px;
+            left: 1450px;
+            top: 1205px;
         }
 
         /* Estilos para o botão de alternância - o fundo */
@@ -196,7 +196,7 @@
     em alterações de senha para maior segurança</p>
 </div>
 </li>
-<li>
+<li style="margin-top: 950px; margin-left: 195px;">
 <div><h2 class="texto2">Mudança de Senha</h2></div>
 
 <div class="corpo1">
@@ -208,10 +208,10 @@
         <input type="text" required>
         <label for="">Comfirme sua senha</label>
     </div>
-    </div>
+    </div></li>
 
 
-
+<li>
     <div class="barinha"><div class="select">
         <select name="format" id="format">
            <option selected disabled>Gênero</option>
@@ -221,11 +221,13 @@
         </select>
      </div>
     </div></li>
-
-</fieldset>
-<fieldset class="configurar">
-
 </ul>
+</fieldset>
+
+<fieldset class="configurar">
+    <fieldset id="ARRANJADO" class="perfil-btn"> <a href="../html/perfil.html" ><p id="perfil-text" >Perfil</p> </a></fieldset>
+    <fieldset id="ARRANJADO" class="Visual-btn"> <a href="../html/perfil.html" ><p id="perfil-text" >visual</p> </a></fieldset>
+    <fieldset id="ARRANJADO" class="Visual-btn"> <a href="../html/perfil.html" ><p id="perfil-text" >Politicas</p> </a></fieldset>
 </fieldset>
 <footer>
     <div class="rodape">
@@ -271,6 +273,17 @@
 
     // Chamar a função para carregar e exibir a imagem ao iniciar a página
     loadAndDisplayImageFromLocalStorage();
+</script>
+
+<script>
+    // Recuperar o nome do cache (se existir) e preencher o campo de entrada
+    document.getElementById('caixa').value = localStorage.getItem('username');
+
+    // Adicionar um ouvinte de eventos para o evento de input
+    document.getElementById('caixa').addEventListener('input', function() {
+        // Atualizar o nome no cache
+        localStorage.setItem('username', this.value);
+    });
 </script>
 </body>
 </html>
