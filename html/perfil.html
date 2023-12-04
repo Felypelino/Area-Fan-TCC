@@ -261,8 +261,8 @@
 </footer>
 <script src="Js/perfil.js"></script>
 <script>
-    let cachedImageDiv = document.getElementById('divCachedImage');
-
+        let cachedImageDiv = document.getElementById('divCachedImage');
+    
     function loadAndDisplayImageFromLocalStorage() {
         const cachedImage = localStorage.getItem('cachedImage');
         if (cachedImage) {
@@ -277,20 +277,7 @@
 
 <script>
 
-let cachedImageDiv = document.getElementById('divCachedImage');
     
-    function loadAndDisplayImageFromLocalStorage() {
-        const cachedImage = localStorage.getItem('cachedImage');
-        if (cachedImage) {
-            cachedImageDiv.style.backgroundImage = `url(${cachedImage})`;
-            // Pode ser necessário ajustar estilos adicionais, como largura e altura
-        }
-    }
-
-    // Chamar a função para carregar e exibir a imagem ao iniciar a página
-    loadAndDisplayImageFromLocalStorage();
-    // Chamar a função para carregar e exibir a imagem ao iniciar a página
-    loadAndDisplayImageFromLocalStorage();
     document.getElementById('caixa').innerText = username;
     // Recuperar o nome do cache (se existir) e preencher o campo de entrada
     document.getElementById('caixa').value = localStorage.getItem('username');
