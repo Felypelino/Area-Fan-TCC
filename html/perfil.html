@@ -2,9 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../html/CSS/Perfil.css">
+    <link rel="stylesheet" href="CSS/Perfil.css">
     <title>Area Fan - Perfil</title>
-    <link rel="shortcut icon" type="imagex/png" href="../html/IMG/Logo.png">
+    <link rel="shortcut icon" type="imagex/png" href="IMG/Logo.png">
 </head>
 <body>
     <style>
@@ -75,16 +75,16 @@
 
 <nav class="navbar" id="navbar">
     
-    <a href="../html/index.html"><img src="../html/IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
-    <div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff; background-image: url(../html/IMG/foto.png);" class="foto"></div>
-
-   <a href="https://www.crunchyroll.com/pt-br"> <img src="../html/IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
+    <a href="index.html"><img src="IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
+   <a href="/perfil.html"> <div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff; background-image: url(IMG/foto.png);" class="foto"></div>
+   </a>
+   <a href="https://www.crunchyroll.com/pt-br"> <img src="IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
    <p id="profile-username" class="nome"></p>
     <ul>
         <li><a href="#">Skins</a></li>
         <li><a href="#">Roupas</a></li>
-        <li><a href="#">Mudar de conta</a></li>
-        <li><a href="../html/login.html">Configurações</a></li>
+        <li><a href="/login.html">Mudar de conta</a></li>
+        <li><a href="#">Configurações</a></li>
     </ul>
     <input type="text" class="search-bar" placeholder="Search" id="search" >
 </nav>
@@ -96,7 +96,7 @@
     <div>
         <div class="largura2">
             <div class="imageContainer">
-            <img src="../html/IMG/foto.png" alt="Selecione uma imagem" id="imgPhoto">
+            <img src="IMG/foto.png" alt="Selecione uma imagem" id="imgPhoto">
             </div>
         </div>
     
@@ -205,7 +205,7 @@
         <label for="">Mude a sua Senha</label>
     </div>
     <div class="input-grop">
-        <input type="text" required>
+        <input type="password" required>
         <label for="">Comfirme sua senha</label>
     </div>
     </div></li>
@@ -225,9 +225,9 @@
 </fieldset>
 
 <fieldset class="configurar">
-    <fieldset id="ARRANJADO" class="perfil-btn"> <a href="../html/perfil.html" ><p id="perfil-text" >Perfil</p> </a></fieldset>
-    <fieldset id="ARRANJADO" class="Visual-btn"> <a href="../html/perfil.html" ><p id="perfil-text" >visual</p> </a></fieldset>
-    <fieldset id="ARRANJADO" class="Visual-btn"> <a href="../html/perfil.html" ><p id="perfil-text" >Politicas</p> </a></fieldset>
+    <fieldset id="ARRANJADO" class="perfil-btn"> <a href="perfil.html" ><p id="perfil-text" >Perfil</p> </a></fieldset>
+    <fieldset id="ARRANJADO" class="Visual-btn"> <a href="perfil.html" ><p id="perfil-text" >visual</p> </a></fieldset>
+    <fieldset id="ARRANJADO" class="Visual-btn"> <a href="perfil.html" ><p id="perfil-text" >Politicas</p> </a></fieldset>
 </fieldset>
 <footer>
     <div class="rodape">
@@ -259,7 +259,7 @@
     </font>
     </div>
 </footer>
-<script src="../html/Js/perfil.js"></script>
+<script src="Js/perfil.js"></script>
 <script>
     let cachedImageDiv = document.getElementById('divCachedImage');
 
@@ -276,8 +276,25 @@
 </script>
 
 <script>
+
+let cachedImageDiv = document.getElementById('divCachedImage');
+    
+    function loadAndDisplayImageFromLocalStorage() {
+        const cachedImage = localStorage.getItem('cachedImage');
+        if (cachedImage) {
+            cachedImageDiv.style.backgroundImage = `url(${cachedImage})`;
+            // Pode ser necessário ajustar estilos adicionais, como largura e altura
+        }
+    }
+
+    // Chamar a função para carregar e exibir a imagem ao iniciar a página
+    loadAndDisplayImageFromLocalStorage();
+    // Chamar a função para carregar e exibir a imagem ao iniciar a página
+    loadAndDisplayImageFromLocalStorage();
+    document.getElementById('caixa').innerText = username;
     // Recuperar o nome do cache (se existir) e preencher o campo de entrada
     document.getElementById('caixa').value = localStorage.getItem('username');
+    
 
     // Adicionar um ouvinte de eventos para o evento de input
     document.getElementById('caixa').addEventListener('input', function() {

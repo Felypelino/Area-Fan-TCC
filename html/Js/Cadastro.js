@@ -11,7 +11,7 @@ function validateEmail() {
       resultMessage.textContent = 'Bem vindo.';
 
       // Redirecionar para outra página
-      window.location.href = '/html/index.html';
+      window.location.href = '/index.html';
       
       // Limpar mensagem de erro se existir
       errorMessage.textContent = '';
