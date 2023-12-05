@@ -7,7 +7,7 @@ function login() {
     var storedEmail = localStorage.getItem('gmail');
     if (enteredsenha === storedSenha && enteredEmail === storedEmail) {
         alert("Login bem-sucedido!");
-        window.location.href = '/index.html';
+        window.location.href = 'index.html';
     } else {
         alert("O email ou senha esta incorreto, tente novamente.");
     }
