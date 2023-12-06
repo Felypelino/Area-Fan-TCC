@@ -27,6 +27,15 @@
         document.getElementById('profile-username').innerText = username;
     } else { document.getElementById('profile-username').innerText ='não logado'}
 
+    var endereco = localStorage.getItem('endereco');
+
+    // Verificar se o nome de usuário está disponível
+    if (endereco) {
+        // Exibir o nome de usuário no label
+        document.getElementById('caixa1').innerText = username;
+    }
+
+
 
 
     // Carregar a imagem do armazenamento local ao iniciar a página

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/Roupas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Fan - Roupas</title>
+    <link rel="shortcut icon" type="imagex/png" href="IMG/Logo.png">
+</head>
+</head>
+<body>
+    <style>
+        .navbar {
+            background: linear-gradient(180deg, #A300FF 0%, #FF8652 100%);
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+            margin-bottom: 200px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            margin: 4;
+            left: 190px;
+            position: absolute;
+        
+        }
+
+        .navbar ul li {
+            margin: 0 125px;
+            font-size: 19px;
+        }
+        
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .search-bar {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 1200px;
+            font-size: 25px;
+            border: 0px;
+            padding: 0px 30px;
+            height: 40px;
+            border-radius: 40px;
+            transform: translate(-55%, -50%);
+        }
+   
+        .color-button {
+      background: #fff;
+      border: none;
+      height: 20px;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 784px) {
+        .navbar {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-bar {
+            margin-top: 20px;
+        }
+    }
+    </style>
+</style>
+
+<nav class="navbar" id="navbar">
+    
+    <a href="index.html"><img src="IMG/Artegra Sans.png" alt="" width=" 175px" class="Logo" height="175px" style="top: 1px;"></a>
+   <a href="perfil.html"> <div id="divCachedImage" style="width: 100px; height: 100px; border: 1px solid #ffffff; background-image: url(IMG/foto.png);" class="foto"></div>
+   </a>
+   <a href="https://www.crunchyroll.com/pt-br"> <img src="IMG/crunchyroll.png" alt="" width="140" class="crunch" height="35"></a>
+   <p id="profile-username" class="nome"></p>
+    <ul>
+        <li><a href="teste.html">Skins</a></li>
+        <li><a href="roupas.html">Roupas</a></li>
+        <li><a href="login.html">Mudar de conta</a></li>
+        <li><a href="perfil.html">Configurações</a></li>
+    </ul>
+    
+    <input type="search" class="search-bar" placeholder="Search" oninput="filterProducts()" id="search" >
+</nav>
+
+<!-- menu a cima-->
+
+ <h1 style="position: absolute; top: 220px; left: 1150px; ">Roupas</h1>
+ <div  class="Populares" id="searchresult"><ul>
+    <li><a href="All might.html"><fieldset class="tamanho" id="All Might boku no hero my academia"><img src="IMG/Anime/All_Might.png"  class="Hitsugaya2">
+<fieldset id="tamanho1"> </a>
+
+<div style="left: 20PX; position: absolute;"><h2>All Might</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$20,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">50%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Bardock Dragon ball son goku"><img src="IMG/Anime/Bardock.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Bardock</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px; width: 400px;"> p m mm g gg </p></b></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><a href="Bills.html"><fieldset class="tamanho" id="Dragon Ball super Bills"><img src="IMG/Anime/Bills.png"  class="Hitsugaya2"></a>
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Bills</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><a href="Bleach.html"><fieldset class="tamanho" id="Bleach Ichigo Shinigami"><img src="IMG/Anime/Bleach.png"  class="Hitsugaya2"></a>
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Bleach</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!-- Populares 1-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><a href="Cavaleiros.html"> <fieldset class="tamanho" id="Cavaleiros do zodiaco seya shun ikki shiryu hyoga"><img src="IMG/Anime/Cavalheiros_do_Zodiaco.png"  class="Hitsugaya2"></a>
+<fieldset id="tamanho1"> 
+
+<div style="left: 20px; position: absolute;"><h2>Cavaleiros</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><a href="Chopper.html"> <fieldset class="tamanho" id="Chopper one piece mugiwara"><img src="IMG/Anime/Chopper._front.png"  class="Hitsugaya2"></a>
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Chopper</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+    
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li>
+    <a href="Crossover.html"> <fieldset class="tamanho" id="Crossover one piece all Might saitama one punch man naruto goku dragon ball luffy"><img src="IMG/Anime/Crossover.png"  class="Hitsugaya2"></a>
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Crossover</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<a href="Daki & Gyutaro.html"><li><fieldset class="tamanho" id="Daki & Gyutaro demon slayer kimetsu"><img src="IMG/Anime/Daki_Gyutaro.png"  class="Hitsugaya3"></a>
+    <fieldset id="tamanho1"> 
+    
+    <div style="left: 20px; position: absolute;"><h2>Daki & Gyu</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!-- roupas 3-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><a href="DB Arcade.html"> <fieldset class="tamanho" id="Dragon Ball Arcade bulma goku kuririn"><img src="IMG/Anime/DB_Arcade.png"  class="Hitsugaya3"></a>
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>DB Arcade</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Deku Mydoria boku no hero my hero academia"><img src="IMG/Anime/Deku.png"  class="Hitsugaya3">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Deku</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Demon slayer inosuke tanjiro nezuko zenitsu kimetsu no yaba"><img src="IMG/Anime/Demon_Slayer.png"  class="Hitsugaya3">
+    <fieldset id="tamanho1">
+    <div style="left: 15px; position: absolute;"><h2>Demon Slay</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Dragon Ball Z"><img src="IMG/Anime/Dragon_Ball_super.png"  class="Hitsugaya4">
+    <fieldset id="tamanho1"> 
+    
+    <div style="left: 20px; position: absolute;"><h2>Dragon BZ</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+    
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--roupas 4-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Luffy Shanks Barba Negra Buggy Four Emperors one piece"><img src="IMG/Anime/Four_Emperors.png"  class="Hitsugaya4">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Four Kings</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Freeza dragon ball"><img src="IMG/Anime/Freeza.png"  class="Hitsugaya4">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Freeza</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Gohan Beast dragon ball"><img src="IMG/Anime/Gohan_Beast.png"  class="Hitsugaya4">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Gohan</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Goku Awakening SSJ dragon ball"><img src="IMG/Anime/Goku_Awakening.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1"> 
+    
+    <div style="left: 20px; position: absolute;"><h2>Goku SSJ</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--roupas 5-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Goku Black dragon ball"><img src="IMG/Anime/Goku_Black.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Goku Black</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+        
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Himiko Toga My hero academia boku no hero"><img src="IMG/Anime/Himiko_Toga.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Himiko</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+    
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Hitsugaya bleach"><img src="IMG/Anime/Hitsugaya_Zempakotou.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Hitsugaya</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Ichigo Kurosaki Shinigami Bleach Hollow Vasto lord"><img src="IMG/Anime/Ichigo_Shinigami.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Ichi Hollow</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+    
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--Roupas 6-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Ichigo Kurosaki Shinigami Bleach Hollow Vasto lord"><img src="IMG/Anime/Ichigo_Vasto_Lord.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Vasto lord</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+</li>
+<li><fieldset class="tamanho" id="Inosuke Hashibira Kimetsu no yaba Demon slayer"><img src="IMG/Anime/Inosuke_Hashibira.png"  class="Hitsugaya5">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Inosuke</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Deku Mydoria boku no hero my hero academia"><img src="IMG/Anime/Izuku_Midorya.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1"> 
+    
+    <div style="left: 20px; position: absolute;"><h2>Izuku</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+    
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+<li><fieldset class="tamanho" id="Gojo Getou Jujutsu Kaisen"><img src="IMG/Anime/jujutsu_Kaisen.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Jujutsu</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--Roupas 7-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Jotaro Joestar Jojo Stand Parte 5 star platinum"><img src="IMG/Anime/Jotaro.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Jotaro</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Kaneki Ken Tokyo Ghoul Kagune"><img src="IMG/Anime/Kaneki.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Keneki Ken</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><a href="Katsuki Bakugo.html"> <fieldset class="tamanho" id="Katsuki_Bakugou boku no hero my hero academia"><img src="IMG/Anime/Katsuki_Bakugou.png"  class="Hitsugaya5"></a>
+    <fieldset id="tamanho1"> 
+    
+    <div style="left: 20px; position: absolute;"><h2>Bakugou</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p> <b> p m mm g gg </b></p></div>
+    
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Kenpachi zaraki shinigami bleach"><img src="IMG/Anime/Kenpachi.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Kenpachi</h2> <div style=" position: absolute; margin-top: 10px;"><b><p style="font-size: 15px;width: 400px; width: 400px;"> p m mm g gg </p></b></div>
+    
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--roupas 8-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Kenpachi zaraki shinigami bleach"><img src="IMG/Anime/Kenpachi_Zenpakotou.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Kenpachi</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Majin kid buu dragon ball Z"><img src="IMG/Anime/KId_Buu.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Kid Buu</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Demon slayer inosuke tanjiro nezuko zenitsu kimetsu no yaba"><img src="IMG/Anime/Kimetsu_no_Yaiba.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Kimetsu</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Bleach shinigami kurosaki ichigo bleach"><img src="IMG/Anime/Ichigo_Kurosaki.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Kurosaki</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!-- roupas 9-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Lemillion boku no hero my hero academia mirio"><img src="IMG/Anime/Lemillion.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>lemillion</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="luffy gear five 5 one piece mugiwara"><img src="IMG/Anime/Luffy_Gear_Five.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Gear 5</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Majin boo dragon ball Z"><img src="IMG/Anime/Majin_Boo.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Majin boo</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Dragon ball mirai trunks Z"><img src="IMG/Anime/Mirai_Trunks.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Trunks</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--10-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Mitsuri demon slayer kimetsu no yaba hashira"><img src="IMG/Anime/Mitsuri..png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>mitsuri</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Monkey D luffy Mugiwara one piece"><img src="IMG/Anime/Monkey_DLuffy.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Mugiwara</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Demon slayer mushiro hashira kimetsu no yaba"><img src="IMG/Anime/Muchiro.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Muchiro</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Demon slayer oni nezuko kamado kimetsu no yaba"><img src="IMG/Anime/Nezuko.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Nezuko Oni</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--11-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><a href="Nezuko.html"><fieldset class="tamanho" id="Demon slayer oni nezuko kamado kimetsu no yaba"><img src="IMG/Anime/Nezuko_Oni.png"  class="Hitsugaya5"></a> 
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Nezuko</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="kimetsu no yaba demon slayer obanai igoru"><img src="IMG/Anime/Obanai_Igoru.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Obanai</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Ochako uraraka uravity my hero academia boku no hero"><img src="IMG/Anime/Ochako_Uraraka.png" class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Uravity</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="one piece zoro mugiwaras luffy nico robin franky sanji chopper brook nami usopp"><img src="IMG/Anime/One_Piece.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>One piece</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--12-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="O Bando one piece mugiwaras luffy ziro sanji nami"><img src="IMG/Anime/One_Piece_Family.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>O Bando</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Portgas D Ace one piece"><img src="IMG/Anime/Portugas_DAce.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Ace</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><a href="Ramen.html"><fieldset class="tamanho" id="one piece dragon ball naruto luffy goku"><img src="IMG/Anime/Ramen.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Ramen</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</a></fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Red riot My hero academia bokue no hero"><img src="IMG/Anime/Red_Riot.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Red Riot</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--13-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="akaza rengoku demon slayer kimetsu no yaba hashira"><img src="IMG/Anime/Rengoku_Akaza.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 10px; position: absolute;"><h2>Demon Fight</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="rukia kuchiki bleach shinigami"><img src="IMG/Anime/Rukia_Ruchika.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Rukia</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Saga Androids dragon ball"><img src="IMG/Anime/Saga_Androids.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Saga DB</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Shenlong dragon ball"><img src="IMG/Anime/Shenlong.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Shenlong</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--14-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="bleah kenpachi zaraki byakuia renji abarai shinigami rukia kuchiki ichigo kurosaki hitsugaya"><img src="IMG/Anime/Shinigami.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>Shinigamis</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Shinobu demon slayer kimetsu no yaba hashira"><img src="IMG/Anime/Shinobu.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Shinobu</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Shoto Todoroki my hero academia boku no hero"><img src="IMG/Anime/Shoto_Todoroki.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Shoto</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Son goku kakaroto dragon ball"><img src="IMG/Anime/Son_Goku.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Son goku</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--15-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="Sword art Online Sao Kirito asuna"><img src="IMG/Anime/Sword_art_Online.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute;"><h2>SAO</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Tanjiro kamado kimetsu no yaba demon slayer"><img src="IMG/Anime/Tanjiro_Kamado.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute;"><h2>Tanjiro</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Demon slayer Tengen uzui hashira kimetsu no yaba"><img src="IMG/Anime/Tengen_Uzui.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 10px; position: absolute;"><h2>Tengen Uzui</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Tomura Shigaraki my hero academia boku no hero"><img src="IMG/Anime/Tomura_Shigaraki.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Tomura</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--16-->
+<div  class="Populares" id="searchresult"><ul>
+    <li><fieldset class="tamanho" id="vegeta family bulma trunks dragon ball"><img src="IMG/Anime/Vegeta_Family.png"  class="Hitsugaya5">
+        <fieldset id="tamanho1">
+        <div style="left: 20px; position: absolute; font-size: 13px;"><h2>Vegeta Family</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+        
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div></fieldset>
+ 
+</fieldset>
+</fieldset></li>
+<li><fieldset class="tamanho" id="Monkey D luffy Mugiwara one piece sabo portgas D ace"><img src="IMG/Anime/We_Are_Brother.png"  class="Hitsugaya5">
+    <fieldset id="tamanho1">
+    <div style="left: 20px; position: absolute; font-size: 13.5px;"><h2>We Are Broter</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+    
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Yamamoto one piece"><img src="IMG/Anime/Yamato.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Yamamoto</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><div id="tamanho2"></div>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$50,00 <p> R$32,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">22%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+</li>
+<li><fieldset class="tamanho" id="Zoro Mugiwara One piece"><img src="IMG/Anime/Zoro.png"  class="Hitsugaya2">
+<fieldset id="tamanho1">
+<div style="left: 20px; position: absolute;"><h2>Zoro</h2> <div style=" position: absolute; margin-top: 10px; width: 400px;"><p><b> p m mm g gg </b> </p></div>
+
+
+
+</div><fieldset id="tamanho2"></fieldset>
+<div style="left: 180px; position: absolute; font-size: 25px; margin-top: -60px;">R$40,00 <p> R$28,00</p></div>
+<div id="tamanho3"><img src="IMG/star.png" width="60px" height="60px"><b><p id="tamanho4">40%</p></b></div>
+</fieldset>
+
+</fieldset>
+
+
+</fieldset></li>
+
+
+</ul>
+</div>
+<!--17-->
+<div class="categorias">
+    
+ <h1 style="margin-left: 90px; margin-top: 30px; margin-bottom: 30px; color: white;" >Categorias</h1>
+ <!--Botões-->
+ <b>
+<div class="localizacao" >
+
+    <input class="btn" type="button" value="Shounem">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Natal">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Halloween">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Herói">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Vilão">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Protagonista">
+</div class="localizacao" >
+<div class="localizacao" >
+    <input class="btn" type="button" value="Promoção">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Garota">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Garoto">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Anti-Herói">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" value="Anti-Herói">
+</div>
+<div class="localizacao" >
+    <input class="btn" type="button" Value="CoProtagonista">
+</div>
+</div>
+</b>
+<!--rodapé a baixo-->
+<footer>
+    <div class="rodape">
+        <font color="#fff">
+            <div class="box"><div class="rectangle"></div></div>
+         <ul>
+        <li><u><h1>Institucional</h1></u>
+       <p>Sobre a empresa</p>
+        <p>Parceiros</p>
+    <p>politicas</p>
+<br>
+       <li> <u><h1>Atendimento</h1></u>
+        <p>Area_fan@gmail.com</p>
+        <p>11 98089-1509</p>
+        <p>11 4345-2594</p>
+        <br>
+      </li>
+        <li><u><h1>Redes</h1></u>
+        <p>@Area_Fan</p>
+    <p>AreaFan.discord.gg</p>
+       <p>AreaFan</p>
+    <br></li>
+    <li><u><h1>Cliente</h1></u>
+    <p onmouseover=" "><a href="perfil.html">Minha conta</a></p>
+   <p>Duvidas</p>
+   <br>
+<br></li>
+    </ul> 
+    </fieldset>
+    </font>
+    </div>
+</footer>
+<script src="Js/Roupas.js"></script>
+<script>
+    let cachedImageDiv = document.getElementById('divCachedImage');
+
+    function loadAndDisplayImageFromLocalStorage() {
+        const cachedImage = localStorage.getItem('cachedImage');
+        if (cachedImage) {
+            cachedImageDiv.style.backgroundImage = `url(${cachedImage})`;
+            // Pode ser necessário ajustar estilos adicionais, como largura e altura
+        }
+    }
+
+    // Chamar a função para carregar e exibir a imagem ao iniciar a página
+    loadAndDisplayImageFromLocalStorage();
+</script>
+</body>
+</html>

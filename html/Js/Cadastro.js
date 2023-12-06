@@ -35,6 +35,20 @@ function validateEmail() {
     localStorage.setItem('username', username);
 }
 
+function endereco() {
+  // Obter o valor do nome de usuário do input
+  var endereco = document.getElementById('endereco').value;
+
+  // Verificar se o nome de usuário foi fornecido
+  if (endereco.trim() === "") {
+      alert("Por favor, insira um nome de usuário.");
+      return;
+  }
+
+  // Armazenar o nome de usuário no armazenamento local
+  localStorage.setItem('endereco', endereco);
+}
+
 function senha(){
     var senha = document.getElementById('senha').value;
     if (senha.trim() === "") {

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../html/CSS/compra.css">
-    <title>Area Fan</title>
+    <link rel="stylesheet" href="CSS/compra.css">
+    <title>Area Fan - Compra</title>
     <link rel="shortcut icon" type="imagex/png" href="IMG/Logo.png">
 </head>
 <body>
@@ -73,8 +73,8 @@
         }
     }
     </style>
-<body>
-</style>
+<body onload="aleatorizarNumero()">
+
 
 <nav class="navbar" id="navbar">
     
@@ -84,24 +84,47 @@
    <p id="profile-username" class="nome"></p>
     <ul>
         <li><a href="#">Skins</a></li>
-        <li><a href="#">Roupas</a></li>
+        <li><a href="roupas.html">Roupas</a></li>
         <li><a href="login.html">Mudar de conta</a></li>
-        <li><a href="#">Configurações</a></li>
+        <li><a href="perfil.html">Configurações</a></li>
     </ul>
     <input type="text" class="search-bar" placeholder="Search" id="search" >
 </nav>
-
 <div class="container">
-    <img src="../html/IMG/Anime/Ramen.png" alt="">
-    <div class="texto"><h1>Camiseta: Ramen</h1></div>
+    <img src="IMG/Anime/Crossover.png" width="800px" height="800px" style="position: absolute; top: -50px;">
+    <div id="sumiu"><div class="texto"><h1>Camiseta: Crossover</h1></div>
+    
     <div class="estrelinha"><img src="IMG/estrelas.png" width="150px" height="100px"></div>
-    <button class="compra" style="background-color: rgb(0, 150, 219); color: white;"><h2>Comprar</h2></button>
-    <div class="texto1"><h2>R$50,00</h2></div>
+    <button onclick="mostrarForm()" class="compra" style="background-color: rgb(0, 0, 0); color: white;"><div class="image"><h2 style="margin-top: 30px;">Comprar</h2></div></button>
+    <div class="texto1"><h2>Por:R$50,00 á vista<br> ou 1x sem juros</h2></div>
+    <div ID="frete">Seu frete ira chegar em <b id="resultado" ></b> Dias <img src="IMG/frete.png" width="50px" class="frete-img" height="50px" alt=""></div>
     <div class="texto2"><h2>Tamanhos</h2></div>
-    <button class="P" style="background-color: rgb(172, 172, 172); color: rgb(0, 0, 0);"><h2>P</h2></button>
-    <button class="M" style="background-color: rgb(172, 171, 171); color: rgb(0, 0, 0);"><h2>M</h2></button>
-    <button class="G" style="background-color: rgb(172, 172, 172); color: rgb(0, 0, 0);"><h2>G</h2></button>
+    <button onclick="mudarCor(this)" class="P" ><div class="image2"><h2 style="position: absolute; margin-top: 11px; left: 17px;">P</h2></div></button>
+    <button onclick="mudarCor(this)" class="M"><div class="image2"><h2 style="position: absolute; margin-top: 11px; left: 17px;" >M</h2></div></button>
+    <button onclick="mudarCor(this)" class="MM"><div class="image2"><h2 style="position: absolute; margin-top: 11px; left: 10px;">MM</h2></div></button>
+    <button onclick="mudarCor(this)" class="G" ><div class="image2"><h2 style="position: absolute; margin-top: 11px; left: 17px;">G</h2></div></button>
+    <button onclick="mudarCor(this)" class="GG" ><div class="image2"><h2 style="position: absolute; margin-top: 11px; left: 11px;">GG</h2></div></button>
 </div>
+</div>
+<div id="form-container" >
+    <h2>Informações do Cartão</h2>
+    <form onclick="mostrarFrete()">
+      <label for="numeroCartao">Número do Cartão:</label>
+      <input type="text" id="numeroCartao" name="numeroCartao" placeholder="1234 5678 9012 3456" required>
+
+      <label for="nomeTitular">Nome do Titular:</label>
+      <input type="text" id="nomeTitular" name="nomeTitular" placeholder="Seu Nome" required>
+
+      <label for="dataValidade">Data de Validade:</label>
+      <input type="text" id="dataValidade" name="dataValidade" placeholder="MM/AA" required>
+
+      <label for="codigoSeguranca">Código de Segurança:</label>
+      <input type="text" id="codigoSeguranca" name="codigoSeguranca" placeholder="123" required>
+
+      <button type="submit">Finalizar Compra</button>
+    </form> </div>
+    
+
 
 <footer>
     <div class="rodape">
@@ -133,7 +156,7 @@
     </font>
     </div>
 </footer>
-<script src="Js/Index.js"></script>
+<script src="Js/compra.js"></script>
 <script>
     let cachedImageDiv = document.getElementById('divCachedImage');
 

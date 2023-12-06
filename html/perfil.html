@@ -82,11 +82,11 @@
    <p id="profile-username" class="nome"></p>
     <ul>
         <li><a href="#">Skins</a></li>
-        <li><a href="#">Roupas</a></li>
+        <li><a href="roupas.html">Roupas</a></li>
         <li><a href="login.html">Mudar de conta</a></li>
-        <li><a href="#">Configurações</a></li>
+        <li><a href="perfil.html">Configurações</a></li>
     </ul>
-    <input type="text" class="search-bar" placeholder="Search" id="search" >
+   <a href="roupas.html"> <input type="text" class="search-bar" placeholder="Search" id="search" ></a>
 </nav>
 <fieldset class="ajuste">
     <h1 style="margin-left:  750px; margin-top: 30px; position: absolute; color: #A300FF;">Sua foto</h1>
@@ -112,7 +112,7 @@
     </div>
     <div class="input-group">
         <input id="caixa1"  type="text" required>
-        <label for="">Mude seu Endereço</label>
+        <label for="endereco">Mude seu Endereço</label>
     </div>
     </div>
 </li>
@@ -287,6 +287,17 @@
     document.getElementById('caixa').addEventListener('input', function() {
         // Atualizar o nome no cache
         localStorage.setItem('username', this.value);
+    });
+
+    document.getElementById('caixa1').innerText = endereco;
+    // Recuperar o nome do cache (se existir) e preencher o campo de entrada
+    document.getElementById('caixa1').value = localStorage.getItem('endereco');
+    
+
+    // Adicionar um ouvinte de eventos para o evento de input
+    document.getElementById('caixa1').addEventListener('input', function() {
+        // Atualizar o nome no cache
+        localStorage.setItem('endereco', this.value);
     });
 </script>
 </body>

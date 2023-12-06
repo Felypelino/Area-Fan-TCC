@@ -24,7 +24,7 @@ body{
   position: relative;
   margin-top: 150px;
   width: 350px;
-  height: 410px;
+  height: 470px;
   background: black;
   border-radius: 20px;
   display: flex;
@@ -207,7 +207,7 @@ button:hover{
   width: 100px;
   left: 40%;
   position:absolute;
-  top: -6%;
+  top: -9.9%;
   }
   #result {
     margin-top: 10px;
