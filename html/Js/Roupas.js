@@ -61,3 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  //scrollar a barra de categorias//
+  const scrollContainer = document.getElementById('scroll-container');
+
+function scrollUp() {
+    scrollContainer.scrollTop -= 50; // Ajuste conforme necessário
+}
+
+function scrollDown() {
+    scrollContainer.scrollTop += 50; // Ajuste conforme necessário
+}
